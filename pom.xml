@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+	<groupId>se.hanskindberg</groupId>
+	<artifactId>hanskindberg-project</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>Hans Kindberg - Java extensions</name>
+	<description>Extensions for Java.</description>
+	<url>http://hanskindberg.wordpress.com</url>
+	<packaging>pom</packaging>
+	<inceptionYear>2012</inceptionYear>
+	<developers>
+		<developer>
+			<id>hanskindberg</id>
+			<name>Hans Kindberg</name>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:git@github.com:HansKindberg-Java/HansKindberg.git</connection>
+		<url>scm:git:git@github.com:HansKindberg-Java/HansKindberg.git</url>
+		<developerConnection>scm:git:git@github.com:HansKindberg-Java/HansKindberg.git</developerConnection>
+	</scm>
+	<modules>
+		<module>se.hanskindberg</module>
+	</modules>
+	<properties>
+		<maven-output>../out/maven/${project.artifactId}</maven-output>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.10</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>1.9.0</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<build>
+		<directory>${maven-output}</directory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
