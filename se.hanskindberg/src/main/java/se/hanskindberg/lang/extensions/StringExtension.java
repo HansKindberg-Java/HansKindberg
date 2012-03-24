@@ -1,10 +1,10 @@
-package se.hanskindberg.lang.utilities;
+package se.hanskindberg.lang.extensions;
 
-public class StringUtility
+public class StringExtension
 {
 	/* Constructors - begin */
 
-	private StringUtility()
+	private StringExtension()
 	{
 		super();
 	}

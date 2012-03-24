@@ -1,14 +1,14 @@
-package se.hanskindberg.lang.reflect.utilities;
+package se.hanskindberg.lang.reflect.extensions;
 
 import java.lang.reflect.Constructor;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ConstructorUtility
+public class ConstructorExtension
 {
 	/* Constructors - begin */
 
-	private ConstructorUtility()
+	private ConstructorExtension()
 	{
 		super();
 	}

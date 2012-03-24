@@ -1,13 +1,13 @@
-package se.hanskindberg.lang.reflect.utilities;
+package se.hanskindberg.lang.reflect.extensions;
 
 import org.junit.Test;
-import se.hanskindberg.lang.utilities.mocks.TestClassWithUpToTenConstructorParameters;
+import se.hanskindberg.lang.extensions.mocks.TestClassWithUpToTenConstructorParameters;
 
 import java.lang.reflect.Constructor;
 
 import static org.junit.Assert.assertEquals;
 
-public class ConstructorUtilityTest
+public class ConstructorExtensionTest
 {
 	/* Methods - begin */
 
@@ -15,7 +15,7 @@ public class ConstructorUtilityTest
 	public void sortByMostParametersAscendingTest()
 	{
 		Constructor[] constructors = TestClassWithUpToTenConstructorParameters.class.getDeclaredConstructors();
-		ConstructorUtility.sortByMostParameters(constructors, true);
+		ConstructorExtension.sortByMostParameters(constructors, true);
 		assertEquals(0, constructors[0].getParameterTypes().length);
 		assertEquals(1, constructors[1].getParameterTypes().length);
 		assertEquals(2, constructors[2].getParameterTypes().length);
@@ -33,7 +33,7 @@ public class ConstructorUtilityTest
 	public void sortByMostParametersDescendingTest()
 	{
 		Constructor[] constructors = TestClassWithUpToTenConstructorParameters.class.getDeclaredConstructors();
-		ConstructorUtility.sortByMostParameters(constructors, false);
+		ConstructorExtension.sortByMostParameters(constructors, false);
 		assertEquals(10, constructors[0].getParameterTypes().length);
 		assertEquals(9, constructors[1].getParameterTypes().length);
 		assertEquals(8, constructors[2].getParameterTypes().length);

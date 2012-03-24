@@ -1,36 +1,36 @@
-package se.hanskindberg.lang.utilities;
+package se.hanskindberg.lang.extensions;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class StringUtilityTest
+public class StringExtensionTest
 {
 	/* Methods - begin */
 
 	@Test
 	public void isNullOrEmptyShouldReturnFalseIfTheStringContainsWhiteSpaces()
 	{
-		assertFalse(StringUtility.isNullOrEmpty("   "));
+		assertFalse(StringExtension.isNullOrEmpty("   "));
 	}
 
 	@Test
 	public void isNullOrEmptyShouldReturnFalseIfTheStringOnlyContainOneWhiteSpace()
 	{
-		assertFalse(StringUtility.isNullOrEmpty(" "));
+		assertFalse(StringExtension.isNullOrEmpty(" "));
 	}
 
 	@Test
 	public void isNullOrEmptyShouldReturnTrueIfTheStringIsEmpty()
 	{
-		assertTrue(StringUtility.isNullOrEmpty(""));
+		assertTrue(StringExtension.isNullOrEmpty(""));
 	}
 
 	@Test
 	public void isNullOrEmptyShouldReturnTrueIfTheStringIsNull()
 	{
-		assertTrue(StringUtility.isNullOrEmpty(null));
+		assertTrue(StringExtension.isNullOrEmpty(null));
 	}
 
 	/* Methods - end */

@@ -1,24 +1,24 @@
-package se.hanskindberg.lang.utilities;
+package se.hanskindberg.lang.extensions;
 
 import org.junit.Test;
-import se.hanskindberg.lang.utilities.mocks.TestClassWithUpToTenConstructorParameters;
+import se.hanskindberg.lang.extensions.mocks.TestClassWithUpToTenConstructorParameters;
 
 import static org.junit.Assert.assertEquals;
 
-public class ClassUtilityTest
+public class ClassExtensionTest
 {
 	/* Methods - begin */
 
 	@Test
 	public void getConstructorWithMostParametersTest()
 	{
-		assertEquals(6, ClassUtility.getConstructorWithMostParameters(TestClassWithUpToTenConstructorParameters.class).getParameterTypes().length);
+		assertEquals(6, ClassExtension.getConstructorWithMostParameters(TestClassWithUpToTenConstructorParameters.class).getParameterTypes().length);
 	}
 
 	@Test
 	public void getDeclaredConstructorWithMostParametersTest()
 	{
-		assertEquals(10, ClassUtility.getDeclaredConstructorWithMostParameters(TestClassWithUpToTenConstructorParameters.class).getParameterTypes().length);
+		assertEquals(10, ClassExtension.getDeclaredConstructorWithMostParameters(TestClassWithUpToTenConstructorParameters.class).getParameterTypes().length);
 	}
 
 	@Test

@@ -1,6 +1,6 @@
 package se.hanskindberg.lang;
 
-import se.hanskindberg.lang.utilities.StringUtility;
+import se.hanskindberg.lang.extensions.StringExtension;
 
 public class ArgumentNullException extends IllegalArgumentException
 {
@@ -29,7 +29,7 @@ public class ArgumentNullException extends IllegalArgumentException
 
 	private static String generateMessage(String parameterName)
 	{
-		return String.format("The parameter%s can not be null.", StringUtility.isNullOrEmpty(parameterName) ? "" : String.format(" \"%s\"", parameterName));
+		return String.format("The parameter%s can not be null.", StringExtension.isNullOrEmpty(parameterName) ? "" : String.format(" \"%s\"", parameterName));
 	}
 
 	public String getParameterName()

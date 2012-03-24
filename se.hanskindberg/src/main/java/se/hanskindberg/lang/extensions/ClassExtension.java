@@ -1,14 +1,14 @@
-package se.hanskindberg.lang.utilities;
+package se.hanskindberg.lang.extensions;
 
-import se.hanskindberg.lang.reflect.utilities.ConstructorUtility;
+import se.hanskindberg.lang.reflect.extensions.ConstructorExtension;
 
 import java.lang.reflect.Constructor;
 
-public class ClassUtility
+public class ClassExtension
 {
 	/* Constructors - begin */
 
-	private ClassUtility()
+	private ClassExtension()
 	{
 		super();
 	}
@@ -27,7 +27,7 @@ public class ClassUtility
 		if (constructors == null || constructors.length == 0)
 			return null;
 
-		ConstructorUtility.sortByMostParameters(constructors, false);
+		ConstructorExtension.sortByMostParameters(constructors, false);
 
 		return constructors[0];
 	}

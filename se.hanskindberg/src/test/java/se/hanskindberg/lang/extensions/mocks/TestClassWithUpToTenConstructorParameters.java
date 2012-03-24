@@ -1,4 +1,4 @@
-package se.hanskindberg.lang.utilities.mocks;
+package se.hanskindberg.lang.extensions.mocks;
 
 public class TestClassWithUpToTenConstructorParameters
 {
