@@ -7,3 +7,4 @@ REM The plugin installs the artifacts in the local Maven repository
 
 mvn install
 PAUSE
+PAUSE
