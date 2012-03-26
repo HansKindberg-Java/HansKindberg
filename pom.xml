@@ -13,7 +13,7 @@
 	<groupId>se.hanskindberg</groupId>
 	<artifactId>hanskindberg-project</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>Hans Kindberg - Java extensions</name>
+	<name>Hans Kindberg - Project</name>
 	<description>Extensions for Java.</description>
 	<url>http://hanskindberg.wordpress.com</url>
 	<packaging>pom</packaging>

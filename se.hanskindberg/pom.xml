@@ -11,8 +11,8 @@
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<groupId>se.hanskindberg</groupId>
 	<artifactId>hanskindberg</artifactId>
+	<name>Hans Kindberg - Java extensions</name>
 	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>

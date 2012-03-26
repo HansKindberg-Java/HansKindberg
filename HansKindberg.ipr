@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AntConfiguration">
-    <defaultAnt bundledAnt="true" />
-  </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
@@ -98,36 +95,10 @@
     <option name="USE_PROJECT_PROFILE" value="true" />
     <version value="1.0" />
   </component>
-  <component name="MavenBuildProjectComponent">
-    <option name="mavenExecutable" value="" />
-    <option name="Settings File" value="" />
-    <option name="mavenCommandLineParams" value="" />
-    <option name="vmOptions" value="" />
-    <option name="useMavenEmbedder" value="false" />
-    <option name="useFilter" value="true" />
-    <option name="Batch Mode" value="false" />
-    <option name="Check Plugin Updates" value="false" />
-    <option name="Debug" value="false" />
-    <option name="Errors" value="false" />
-    <option name="Fail At End" value="false" />
-    <option name="Fail Fast" value="false" />
-    <option name="Fail Never" value="false" />
-    <option name="Lax Checksums" value="false" />
-    <option name="No Plugin Registry" value="false" />
-    <option name="No Plugin Updates" value="false" />
-    <option name="Non Recursive" value="false" />
-    <option name="Offline" value="false" />
-    <option name="Reactor" value="false" />
-    <option name="Strict Checksums" value="false" />
-    <option name="Update Plugins" value="false" />
-    <option name="Update Snapshots" value="false" />
-    <option name="Skip Tests" value="false" />
-    <pom-list />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/se.hanskindberg/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="activeProfiles">
@@ -314,6 +285,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HansKindberg.iml" filepath="$PROJECT_DIR$/HansKindberg.iml" />
       <module fileurl="file://$PROJECT_DIR$/se.hanskindberg/se.hanskindberg.iml" filepath="$PROJECT_DIR$/se.hanskindberg/se.hanskindberg.iml" />
     </modules>
   </component>
@@ -321,10 +293,10 @@
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out/intellij" />
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Maven: junit:junit:4.10">
